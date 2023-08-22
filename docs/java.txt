@@ -1,0 +1,77 @@
+JAVA BÁSICO:
+
+[Java Fundamentos]
+
+Java é composto de um conjunto de funcionalidades (features)
+Simples:
+É uma linguagem simples e fácil de entender, pois não possui complexidades
+pois tem que funcionar em dispositivos eletronicos onde tem menos recursos
+
+Orientada a objeto:
+é uma linguagem POO, é escrito em termos de Classes (estrutura) e Objetos
+
+para começar a desenvolver:
+1- classe e objeto
+2 - encapsulamento
+3 - abstração
+4 - herança
+5 - polimorfismo
+
+
+Plataforma Independente:
+
+O objetivo é desenvolver uma linguagem que funciona em qualquer plataforma
+Em java, o código-fonte é compilado para bytecode e não está vinculado a 
+nenhuma plataforma
+
+Portátil:
+
+Conceito WORA - e o recurso independente tornam o java portátil, usando java
+os devs podem obter o mesmo resultado em qualquer máquina, escrevendo o
+código apenas uma vez graças ao JVM e bytecode.
+
+Robusta:
+
+É uma linguagem robusta, capaz de lidar com o encerramento inesperado de um
+programa
+*Usa um gerenciamento de memória forte
+*Fornece coleta de lixo automatica
+*Ha tratamento de exceção e mecanismo de verificação de tipos
+
+Segura: 
+
+Problemas com virus, espionagem podem ser tratados ou minimizados com Java.
+A linguagem oferece recursos de segurança para programadores.
+Existem recursos de criptografia para proteger seus dados.
+
+Interpretada:
+
+Usa a linguagem compilada e interpretada. Os programas são compilados 
+para gerar arquivos bytecode e JVM (java virtual machine) 
+
+Multi-thread:
+
+Thread é um suprocesso leve e independente de um programa em execução
+que compartilha recursos;
+
+
+JAVA E SUA HISTÓRIA:
+
+james gosling criou a green em 91, java em 1995
+
+IDE: ambiente de desenvolvimento integrado
+
+*acelaração da nossa escrita com auto-complete ou intellisense (expressoes)
+*formatação de palavras e blocos de codigos
+*analise de erro de sintaxe
+*compilação de programa
+*depuração (acompanhamento) de execução do programa
+
+Eclipse IDE
+
+IntelliJ
+
+Vs code
+
+
+
