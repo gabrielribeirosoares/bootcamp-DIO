@@ -1,0 +1,68 @@
+Conteúdos::
+
+Estrutura Inicial
+Padrão de nomenclatura
+Declarando variáveis e métodos
+Identação
+Organizando arquivos
+Java Beans
+
+Anatomia da Classe:
+
+public class MinhaClass {
+
+	//Seu código aqui
+
+}
+
+todos arquivos java, começam com a letra maiuscula
+
+
+se a classe for executavel ( inicializar o projeto):
+usar - main
+public static void main(String[] args)
+System.out.print ("Olá, Mundo!");
+
+
+NOME DO ARQUIVO E CLASSE DEVEM SER IGUAIS
+
+variáveis devem ser escritas em letras minusc.
+no começo, se for composta, por ex: anoFabricacao
+"camelCase"
+
+final String BR = "Brasil";
+a string não poderá ser alterada
+
+para declarar variáveis: deve conter apenas letras
+underline, $ ou números de 0 a 9;
+deve se iniciar por uma letra, underline, ou $
+jamais por número
+deve iniciar com letra minúscula
+não pode conter espaços
+não pode usar palavras-chave da linguagem
+o nome deve ser único dentro de um escopo
+
+
+DECLARANDO VARIAVEL:
+Tipo NomeDefinido = Atribuição (opcional em alguns casos)
+int idade = 23;
+double altura = 1.80;
+Dog spike;
+
+
+boolean 
+
+
+DECLARANDO METODOS
+
+TipoRetorno NomeObjetivoNoInfinitivo Parametro(s)
+int somar (int numeroUm, int numero2)
+
+String formatarCep (long cep)
+
+todo método tem parametro
+
+
+
+
+
