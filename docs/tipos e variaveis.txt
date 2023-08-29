@@ -1,0 +1,76 @@
+no Java, existem algumas palavras reservadas
+para a representação dos tipos de dados que 
+precisam ser manipulados para a construção
+de programas, conhecidos como tipos primitovos
+
+oito tipos primitivos: 
+int, byte, short, long, float(fracionado)
+double, boolean 
+e char
+
+esses tipos não sao considerados objetos, 
+representam valores brutos
+memory stack
+
+
+variável é uma identificação de um espaço em
+memória utilizado pelo nosso programa.
+Seguindo as convenções em linguagem de programação
+toda variável é composta por: 
+tipo de dados+ id + valor atribuido.
+a estrutura padrão para se declara é:
+
+<Tipo> <nomeVariavel> <atribuicaoDeValorOpcional>
+
+ex:
+
+int idade;
+
+int anoFabricacao = 2021;
+
+double salarioMinimo = 2.500;
+
+ATENÇÃO!
+
+existem algumas peculiaridades;
+
+public class TipoDados {
+	public static void main(String[] args){
+		byte idade = 123;
+		shor ano = 2021;
+		int cep = 88945000 // se começar com zero tem que ser outro tipo
+		long cpf = 123456789101L // precisa terminar com L
+		float pi = 3.14F (precisa terminar com F ou f)
+		double salario = 1275.33;
+
+
+short numeroCurto = 1;
+int numero Normal = numeroCurto;
+short numeroCurto2 = numeroNormal;
+
+
+
+
+VARIAVEL VS CONSTANTES
+
+constantes são sempre em CAIXA ALTA
+VALOR_DE_PI = 3.14
+
+final double VALOR_DE_PI = 3.14 (valor não é alterado
+devido a tag final)
+
+
+//tipos primitivos
+// classe String que representa texto
+String meuNome = "GABRIEL RIBEIRO";
+
+
+
+
+
+
+
+
+
+
+
