@@ -1,0 +1,111 @@
+OPERADORES 
+
+aritméticos 
+unários
+relacionais
+lógicos
+ternários
+
+São simbolos especiais que tem significado proprio
+para a linguagem
+
+== igual
+!= diferente
+< menor que
+> maior que
+<= menor ou igual
+>= maior ou igual
+
+"=" valor inicial, ou alterar uma variavel
+
+
+cada tipo de dado, tem uma forma de ser declarado
+o valor
+
+OPERADORES DE ATRIBUIÇÃO:
+
+String nome = "GABRIEL";
+int idade = 22;
+double peso = 68.5;
+char sexo = 'M';
+boolean doadorOrgao = false;
+Date dataNasciment = new Date ();
+
+OPERADORES ARITMÉTICOS:
+
+utilizado para realizar operações matemáticas
+double soma = 10.5 + 15.7;
+int subtração = 113 - 25;
+int multiplicação = 20 * 7;
+int divisão = 15 / 3;
+int modulo = 18 % 3;
+double resultado = (10 * 7) + (20/4);
+
+o operador adição (+), quando utilizado em var do tipo
+texto, realizará uma "concatenação de textos"
+
+String nomeCompleto = "LINGUAGEM" + "JAVA";
+
+OPERADORES UNÁRIOS 
+
+são operadores que são aplicados com outros operadores
+aritméticos. Incrementar, decrementar, inverter
+valores numéricos e booleanos.
+(+) operadores positivos
+(-) operadores negativos
+(++) operador de incremento
+(--) operador de decremento
+(!) operador lógico de negação
+
+numero ++;
+System.out.println(numero);
+numero + 1
+
+variavel = true;
+variavel = !variavel;
+System.out.println(variavel);
+
+OPERADORES TERNARIOS:
+
+semelhante ao if, mas na mesma linha.
+
+int a, b;
+
+        a = 6;
+        b = 6;
+        String resultado = a==b ?"verdadeiro":"falso";
+	(ou int)
+        System.out.println(resultado);
+true or false.
+boolean
+
+OPERADORES RELACIONAIS:
+
+avialiam a relação entre duas var ou expressoes
+definem se o operando à esquerda é igual, diferente,
+menor ou igual, maior ou igual ao da direita, retor
+nando um valor booleano como resultado
+
+== Quando desejamos verificar se uma variável é IGUAL A outra.
+!= Quando desejamos verificar se uma variável é DIFERENTE da outra.
+> Quando desejamos verificar se uma variável é MAIOR QUE a outra.
+>= Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.
+< Quando desejamos verificar se uma variável é MENOR QUE outra.
+<= Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.
+
+OPERADORES LÓGICOS:
+
+&& Operador Lógico "E"
+|| Operador Lógico "OU" 
+
+
+
+
+
+
+
+
+
+
+
+
