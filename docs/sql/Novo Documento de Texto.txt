@@ -1,0 +1,53 @@
+COMANDO: CREATE TABLE
+
+CREATE TABLE {{nome}}
+	({{coluna}} {{tipo}} {{opções}} COMMENT {{'COMENTARIO'}});
+
+OPÇÕES:
+  Restrições de valor:
+	NOT NULL
+	UNIQUE
+	DEFAULT
+  Chaves primárias e estrangeiras (ja é possivel fazer a sinalizacao de qual coluna vai estar a info)
+  Auto incremento (incrementa o valor do ID do user)
+
+
+COMANDO: INSERT
+
+INSERT INTO
+	{{nome-tabela}}
+	([coluna1, coluna2,...]) *** colunas podem ser ocultadas
+VALUES
+	([valor-coluna1, valor-coluna2,...])
+
+
+COMANDO : SELECT
+	SELECT {{lista_colunas}}
+	FROM tabela;
+
+Onde * retorna todas colunas
+
+	SELECT {{lista_colunas}}
+	FROM tabela
+	WHERE {{condicao}};
+= (igualdade)
+<> ou !=(desigual)
+> (maior que)
+< (menor que)
+>= (maior ou igual que)
+<= (menor ou igual que)
+LIKE (comparacao)
+IN (pertence a uma lista de valroes)
+BETWEEN (dentro do intervalo)
+AND (e lógico)
+OR (ou lógico)
+
+
+TIPOS DE DADOS:
+
+Inteiro ( Integer) 
+Decimal/ numérico (Decimal/ Numeric)
+Caractere/Varchar (Character/Varchar)
+Data/Hora (Data/Time)
+Booleano (Boolean) (flags de true or false)
+Texto longo (Text)
