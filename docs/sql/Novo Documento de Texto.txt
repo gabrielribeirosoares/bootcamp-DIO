@@ -30,6 +30,27 @@ Onde * retorna todas colunas
 	SELECT {{lista_colunas}}
 	FROM tabela
 	WHERE {{condicao}};
+
+CHAVES ESTRANGEIRA
+
+	CREATE TABLE {{tabela}}(
+	id INT PRIMARY KEY,
+	chave_estrangeira INT,
+	FOREIGN KEY (chave_estrangeira) REFERENCES {{ outra tabela }} (id)
+	);
+
+
+ALTER TABLE {{tabela}}
+ADD CONSTRAINT {{nome_constraint}}
+FOREIGN KEY {{ID_}}
+REFERENCES {{outra_tabela}}(ID)
+
+
+
+ATOMICIDADE DE DADOS:
+
+
+
 = (igualdade)
 <> ou !=(desigual)
 > (maior que)
