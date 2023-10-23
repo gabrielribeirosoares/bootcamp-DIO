@@ -1,0 +1,31 @@
+JUNÇÕES - TIPOS:
+
+INNER JOIN:
+Retorna apenas as linhas que tem correspondencia em ambas tabelas envolvidas na junção.
+
+LEFT JOIN ou LEFT OUTER JOIN:
+Retorna todas as linhas da tabela à esquerda da junção e as linhas correspondentes a tabela da direita.
+
+RIGHT JOIN ou RIGHT OUTER JOIN
+Retorna todas as linhas da tabela a direita da juncao e as linhas correspondentes a tabela da esquerda.
+
+FULL JOIN ou FULL OUTER JOIN
+
+
+SUBCONSULTAS: 
+
+SELECT
+
+FROM
+
+WHERE
+
+HAVING
+
+JOIN
+
+
+indice de busca:
+
+CREATE INDEX {{idx_name}}
+ON {{table}} ({{coluna1,coluna2,...}});

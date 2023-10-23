@@ -1,0 +1,203 @@
+TERMO: 
+NOT Only SQL
+
+TIPOS:
+
+Key-value -> Chave valor
+Armazena dados como pares de chaves e valor, onde cada chave é um identificador unico; ex: Redis, Riak, Amazon DynamoDB
+Uso: um site pode usar bando de dados Redis para armaenar informações de sessão de usuário.
+
+Documento
+Armazena dados em documentos semiestruturados geramlemte em JSON e BSON.
+Ex: MongoDB, Couchbase, Apache, CouchDB.
+Uso: Um catálogo de e-commerce pode usar o Mongo para armazenar informações de produtos como nome, descrição, preço e atributos adicionais.
+
+Coluna
+Armazena dados em formato de colunas, o que permite a alta escalabilidade e eficiencia em determinados tipos de consulta
+ex: Apacha Cassandra, ScyllaDB, HBase;
+Uso: Um sistema de registro de aplicativos pode usar o Apache Cassandra para armazenar registro de log.
+
+Grafos
+Armazena e consulta dados interconectados, onde os relacionamentos sao tao importantes quanto os dados.
+ex: Neo4j, Amazon Neptune, JanusGraph;
+Uso: uma rede social pode usar o Neo4j para armazenar os perfis dos usuários e suas conexões.
+
+MONGODB
+
+Banco de dados NoSQL orientado a documentos.
+Grandes volumes de dados, escalabilidade horizontal e modelagem flexivel.
+Não exige um esquema.
+Permite que os documentos sejam armazenados em formado BSON (binary JSON), proporcionando uma estritura semiestruturada.
+
+VANTAGENS:
+
+flexibilidade na modelagem de dados;
+escalabilidade horizontal;
+consulta ricas e suporte nas consultas complexas;
+alta disponibilidade e tolerancia a falhas;
+comunidade ativa e recursos de suporte;
+
+DESVANTAGENS:
+menor consistencia imediata;
+consultas complexas exigem maior conhecimento;
+maior consumo de espaço de armazenamento;
+
+ONDE É USADO:
+
+Aplicações WEB: onde a flexibilidade e a escalabilidade são cruciais para lidar com volumes varáveis de dados;
+
+Analise de big data: análise de grandes volumes de dados não estruturados ou semiestruturados, fornecendo uma plataforma para armazenar e processar os dados;
+
+Armazenamento de dados semiestruturados: permite a inserção de documentos com estruturas diferentes em uma mesma coleção;
+
+Casos de geolocalização: é adequado para casos de uso que envolvem dados baseados em localização, como aplicativos de mapeamento e rastreamento;
+
+User: adm
+pass: Whdtffn1
+https://cloud.mongodb.com/
+
+CARACTERISTICAS:
+Os nomes de coleções devem seguir algumas regras:
+Devem começar com uma letra ou underline(_);
+podem conter letras, numeros ou _;
+não podem ser vazios;
+não podem ter mais de 64 bytes de comprimento;
+
+DOCUMENTOS:
+cada documento possui um "_id";
+é composto por pares de chaves e valores;
+
+TIPOS DE DADOS SIMPLES:
+String;
+Number;
+Boolean;
+Date;
+Null;
+ObjectId;
+
+DADOS COMPLEXOS:
+Array;
+Documento Embutido;
+Referencia;
+GeoJSON;
+
+ESTRUTURA DE UM DOCUMENTO:
+
+{
+	_id: ObjectId(""),
+	"nome_campo":"valor_campo",
+	...
+}
+
+{
+"_id": 1,
+"nome" : "Gabriel Ribeiro",
+"idade": 30,
+"data_nascimento": "2000-03-21",
+"endereco": "Ambrosio de fora, sn",
+"enderecos": [{
+"logradouro": "ambrosio de fora...",
+"numero": 123,
+"bairro": "ambrosio",
+"cidade": "garopaba"
+}],
+"interesses": ["kart","gastronomia"],
+"reservas": [ ObjectId("123"), ObjectId("234")
+]
+}
+
+{
+"_id": 1,
+"nome": "Praia do rosa",
+"descricao": "bela praia",
+"localizacao": {
+"type": 'Point',
+"coordinates":[-28.130299, -48.642158]
+}
+
+}
+
+{
+"_id": ObjectId("123"),
+"destino": ObjectId("456"),
+"data": "2023-10-01",
+"status": "pendente",
+"usuario": ObjectId(345)
+}
+
+
+CRIANDO UM DB:
+
+use{{nome_do_banco}}
+
+INSERINDO DOCUMENTOS:
+
+db.usuarios.insertOne({});
+db.usuarios.insertMany([{}]);
+
+CONSULTANDO DOCS:
+
+db.usuarios.find({});
+db.usuarios.findOne({}); - primeiro doc
+db.usuarios.findOneAndUpdate({ },{});
+db.usuarios.findOneAndDelete({});
+
+
+EXCLUINDO DOCUMENTOS:
+
+db.usuarios.deleteOne({});
+db.usuarios.deleteMany({});
+
+operadores: $set (altera a info)
+$inc (acrescenta a quantidade)
+$push ( para adicionar ao array)
+
+IGUALDADE:
+Realiza consulta baseada em um valor específico para um campo
+
+db.usuarios.find({"endereco.cidade": "São Paulo"})
+
+OPERADORES LOGICOS:
+
+$and; {$and: [{idade: 23}, {nome: "Gabriel"}]} 
+$or;
+$not;
+
+OPERADORES COMPARAÇÃO:
+
+$eq: == (igual)
+$ne: != (diferente)
+$gt: > (maior)
+$gte: >= (maior ou igual)
+$lt: < (menor)
+$lte: <= (menor ou igual)
+$in: [] (dentro de)
+$nin: [] (negacao de igualdade)
+
+
+PROJEÇÕES:
+
+Definir quais campos devem ser retornados na consulta;
+
+ORDENAÇÃO:
+
+Ordenar os resultados de uma consulta com base em um ou mais campos.
+
+LIMITAÇÃO:
+
+Limitar o número de cdocumentos retornados
+
+PAGINAÇÃO:
+
+db.usuarios.find().skip(10).limit(5); 
+
+
+
+
+
+
+C:\Users\user\Documents\GitHub\bootcamp-DIO\maven>mvn archetype:generate -DgroupId=one.digitalinnovation -DartifactId=quick-start-maven -Darchetype=maven-archetype-quickstart -Dinteractive Mode=false
+
+
+
+
